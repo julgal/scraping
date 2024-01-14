@@ -8,6 +8,3 @@ data = []
 
 for h in html:
 	data.append(h.text)
-
-for d in data:
-	print(d, " ")
