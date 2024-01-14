@@ -17,13 +17,7 @@ if response.status_code == 200:
 	f.close()
 
 	soup = BeautifulSoup(html, "html5lib")
-	li = soup.find_all("li")
-	for l in li:
-		if len(l.text) < 25 and " : " in l.text:
-			data.append(l.text)
 
 else:
 	print("Erreur :", response.status_code)
 
-for d in data:
-	print(d)
