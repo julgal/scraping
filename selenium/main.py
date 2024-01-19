@@ -28,9 +28,11 @@ def click_next_page():
 get_data()
 sleep(2)
 
-for _ in range(100):
+for _ in range(5):
     click_next_page()
     sleep(2)
     get_data()
 
 driver.quit()
+for d in data_emails:
+    print(data_emails[d])
