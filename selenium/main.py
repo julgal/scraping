@@ -7,7 +7,8 @@ from time import sleep
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-url = ''
+#url = 'https://www.lehavre.fr/annuaire'
+
 driver.get(url)
 
 sleep(4)
