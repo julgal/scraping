@@ -4,8 +4,6 @@ def check_if_error(url):
     try:
         response = requests.get(url)
         response.raise_for_status()
-        if response.status_code == 200:
-            print("It's ok")
     except requests.exceptions.HTTPError as errh:
         print("Http Error:", errh)
     except requests.exceptions.ConnectionError as errc:
